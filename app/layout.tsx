@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Free-Tier AI Studio',
-  description: 'Multi-provider free-tier AI aggregation with intelligent routing — chat, script, code, research at zero cost.',
+  title: 'Wahid & Wasiq AI Studio',
+  description: 'Multi-provider free-tier AI studio by Wahid & Wasiq — intelligent routing across Groq, Gemini, OpenRouter and more.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -1,21 +1,22 @@
-# Free-Tier AI Studio
+# Wahid & Wasiq AI Studio
 
-A multi-provider free-tier AI web application that aggregates Google Gemini, Groq LPU, OpenRouter, Mistral, and more into a unified, resilient interface.
+A multi-provider free-tier AI web application aggregating Google Gemini, Groq LPU, OpenRouter, Mistral, and more into a unified, resilient interface.
+
+**Company:** Wahid & Wasiq AI Studio
 
 ## Features
 
-- **Intelligent modality routing**: Chat → Groq, Script → Gemini, Code → specialized models, Research → Gemini with grounding
-- **BYOK (Bring Your Own Key)**: Enter free-tier API keys in the UI (stored locally)
-- **Fallback cascades** (extensible in the proxy)
-- **Artistic, elegant UI** inspired by classical form and light
-- **Streaming responses** via Vercel AI SDK
-- **Zero marginal inference cost** when using free tiers
+- Intelligent modality routing: Chat → Groq LPU, Script → Gemini, Code → specialized models, Research → Gemini
+- BYOK (Bring Your Own Key) — keys stored locally in the browser
+- Elegant artistic interface with monogram branding
+- Streaming responses via Vercel AI SDK
+- Zero marginal inference cost on free tiers
 
 ## Setup
 
 1. Clone the repo
 2. `npm install`
-3. Add your free-tier keys in the app Settings, or set environment variables:
+3. Enter free-tier API keys in the Settings panel, or set environment variables:
    - `GROQ_API_KEY`
    - `GEMINI_API_KEY`
    - `OPENROUTER_API_KEY`
@@ -24,13 +25,6 @@ A multi-provider free-tier AI web application that aggregates Google Gemini, Gro
 
 ## Deploy
 
-Deployed on Vercel free tier. Push to `main` for automatic deployments.
+Deploy on Vercel free tier. Import the repository and deploy.
 
-## Architecture
-
-- Next.js 14 App Router
-- Edge runtime proxy (`/api/chat`)
-- Client-side key management
-- Mode-based provider selection with room for dynamic fallback and key pooling
-
-Built for zero-cost, high-performance AI experiences.
+Built as a composed studio of free-tier intelligence.
