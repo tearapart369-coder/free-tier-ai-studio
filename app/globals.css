@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+body {
+  background: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
+  color: #F8F4EF;
+  font-family: 'Inter', sans-serif;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 166, 107, 0.2);
+}
+
+.curve-border {
+  border-radius: 1.5rem;
+}
