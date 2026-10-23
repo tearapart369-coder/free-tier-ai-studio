@@ -90,16 +90,18 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-[#0F0F1A] via-[#1A1A2E] to-[#16213E]">
-      {/* Header */}
-      <header className="glass border-b border-gold/20 px-6 py-5 flex items-center justify-between">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-[#0A0A12] via-[#1A1A2E] to-[#0F172A]">
+      {/* Header with official logo */}
+      <header className="glass border-b border-gold/20 px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <div className="w-12 h-12 rounded-full border-2 border-gold flex items-center justify-center bg-deep/80">
-            <span className="font-serif text-lg text-gold font-semibold">W&W</span>
-          </div>
-          <div>
-            <h1 className="font-serif text-2xl font-semibold tracking-wide text-cream">Wahid & Wasiq</h1>
-            <p className="text-xs text-gold/80 tracking-widest uppercase">AI Studio · Multi-Provider Free Tier</p>
+          <img 
+            src="/logo.jpg" 
+            alt="Wahid & Wasiq AI Studio" 
+            className="h-14 w-auto object-contain drop-shadow-lg"
+          />
+          <div className="hidden sm:block">
+            <h1 className="font-serif text-xl font-semibold tracking-wide text-cream">Wahid & Wasiq</h1>
+            <p className="text-xs text-gold/80 tracking-widest uppercase">AI Studio</p>
           </div>
         </div>
         <button
@@ -132,14 +134,15 @@ export default function Home() {
       {/* Messages */}
       <div className="flex-1 overflow-y-auto px-6 py-4 space-y-5">
         {messages.length === 0 && (
-          <div className="text-center py-24 opacity-80">
-            <div className="w-20 h-20 mx-auto mb-6 rounded-full border border-gold/30 flex items-center justify-center">
-              <Sparkles className="text-gold" size={36} />
-            </div>
+          <div className="text-center py-20 opacity-90">
+            <img 
+              src="/logo.jpg" 
+              alt="Wahid & Wasiq" 
+              className="h-32 mx-auto mb-6 object-contain opacity-90"
+            />
             <p className="font-serif text-2xl text-cream">Wahid & Wasiq AI Studio</p>
             <p className="text-sm mt-3 text-gold/70 max-w-md mx-auto leading-relaxed">
-              Orchestrating free-tier intelligence across Groq, Gemini, and beyond.<br />
-              Select a mode and begin.
+              Multi-provider free-tier intelligence · Chat · Script · Code · Research
             </p>
           </div>
         )}
